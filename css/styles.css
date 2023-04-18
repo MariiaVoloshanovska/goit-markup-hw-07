@@ -799,7 +799,6 @@ body {
 
 /* ================ THE NEW MODAL WINDOWv====================== */
 
-
 .backdrop {
     position: fixed;
     top: 0;
@@ -816,8 +815,14 @@ body {
 
 .backdrop.is-hidden {
     opacity: 0;
+
+/* Дозволяє приховувати елемент від читалок, пошукових роботів */
     visibility: hidden;
+
+    /* we can work with our content not to feel our modal winow (click) */
     pointer-events: none;
+
+    transition-delay: 150ms;
 }
 
 .backdrop.is-hidden .modal {
@@ -878,7 +883,7 @@ body {
 
 /* ================ /THE NEW MODAL WINDOW ====================== */
 
-/* ================ MODAL FORM ====================== */
+/* ================ DESIGN MODAL FORM ====================== */
 
 .mdl-p {
     font-weight: 500;
