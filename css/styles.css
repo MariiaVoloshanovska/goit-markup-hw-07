@@ -1049,7 +1049,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 
 .modal-form-input:focus + .modal-form-input-icon {
-    fill: #4D5AE5;
+    fill: var(--logo-footer);
     /* color: #4D5AE5; */
 }
 
@@ -1096,7 +1096,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 
 .modal-form-check:checked + .modal-form-check-desk::before {
-    background-color: #404BBF;
+    background-color: var(--accent-bg-color);
     background-image: url("../images/attributes/gal.svg");
     background-repeat: no-repeat;
     background-position: center;

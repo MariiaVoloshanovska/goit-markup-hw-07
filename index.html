@@ -121,7 +121,19 @@
           <h2 class="section-main">Our Team</h2>
           <ul class="list members-flex">
             <li class="employee-item">
-              <img class="employee-photo" src="./images/the_team/mark.jpg" alt="Mark" width="264" height="260" />
+              <picture>
+                <source srcset="./images/tablet/mark@2x.jpg" media="(min-width: 1200px)" type="image" />
+                <img
+                  class="employee-photo"
+                  src="./images/the_team/mark.jpg"
+                  alt="retina-picture"
+                  class="picture-img"
+                  alt="Mark"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="employee-wrapper-inside">
                 <h3 class="section-paragraf section-paragraf-members">Mark Guerrero</h3>
                 <p class="section-description section-descrip-theme-light">Product Designer</p>
@@ -158,7 +170,11 @@
               </div>
             </li>
             <li class="employee-item">
-              <img class="employee-photo" src="./images/the_team/tom.jpg" alt="Tom" width="264" height="260" />
+              <picture>
+                <source srcset="./images/tablet/tom@2x.jpg" media="(min-width: 1200px)" type="image" />
+                <img class="employee-photo" src="./images/the_team/tom.jpg" alt="Tom" width="264" height="260" />
+              </picture>
+
               <div class="employee-wrapper-inside">
                 <h3 class="section-paragraf section-paragraf-members">Tom Ford</h3>
                 <p class="section-description section-descrip-theme-light">Frontend Developer</p>
