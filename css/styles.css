@@ -62,23 +62,24 @@ body {
 
 
 .container {
-    min-width: 320px;
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 @media only screen and (min-width: 768px) {
     .container {
-        max-width: 738px;
+        max-width: 768px;
     }
 }
 
 @media only screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -365,6 +366,21 @@ body {
     /* margin: 0 auto; */
 }
 
+
+
+.hero {
+    background-color: var(--primary-text-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/background/bg.jpg");
+    background-size: cover;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/mobile/bg-mobile.jpg");
