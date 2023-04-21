@@ -174,13 +174,32 @@ body {
 
 .menu-link-contacts {
     display: block;
-    font-size: 16px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.menu-link-contacts-new {
+    margin-bottom: 12px;
+}
+@media screen and (min-width: 1158px) {
+    .menu-link-contacts-new {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .menu-link-contacts {
+        padding-right: 40px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
 }
 
 .menu-link-contacts:hover,
@@ -203,11 +222,21 @@ body {
 
 .section-paragraf {
     margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700px;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
 }
+
+@media only screen and (min-width: 1128px) {
+    .section-paragraf {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+}
+
 
 .section-paragraf-members {
     text-align: center;
@@ -223,9 +252,16 @@ body {
 } 
 
 .section-description{
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+@media only screen and (min-width: 1128px) {
+    .section-description {
+        font-weight: 400;
+    }
 }
 
 .section-descrip-theme-light {
@@ -378,6 +414,13 @@ body {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .menu-item-cont:not(:last-child) {
+        margin-right: 40;
+    }
+}
+
+
 .contacts {
     display: flex;
     align-items: center;
@@ -388,6 +431,14 @@ body {
     .contacts {
         flex-direction: column;
         align-items: flex-end
+    }
+}
+
+@media only screen and (min-width: 1128px) {
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 }
 
