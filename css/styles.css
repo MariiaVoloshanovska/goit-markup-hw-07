@@ -76,9 +76,9 @@ body {
     padding-right: 16px;
 }
 
-@media  screen and (min-width: 78px) {
+@media  screen and (min-width: 768px) {
     .container {
-        max-width: 728px;
+        max-width: 768px;
     }
 }
 
@@ -304,6 +304,7 @@ body {
     gap: 24px;
 }
 
+
 .style-members {
     width: 100%;
     height: 100%;
@@ -467,7 +468,7 @@ body {
 }
 
 
-.main-title {
+/* .main-title {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -479,7 +480,52 @@ body {
     letter-spacing: 0.02em;
     color: var(--white-color);
     text-align: center;
+} */
+
+
+
+
+.main-title {
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 72px;
+    max-width: 320px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    text-align: center;
 }
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .main-title {
+        margin-bottom: 36px;
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+}
+
+
+@media only screen and (min-width: 1158px) {
+    .main-title {
+        margin-bottom: 48px;
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+}
+
+/* Header 2 */
 
 .modal-btn {
     border-radius: 4px;
@@ -516,12 +562,36 @@ body {
 .descripption-flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
 }
 
-.description-item {
-    width: calc((100% - 3 * 24px) / 4);
+@media only screen and (min-width: 1128px) {
+    .main-title {
+    gap: 24px;
+    }
 }
+
+
+/* .description-item {
+    width: calc((100% - 3 * 24px) / 4);
+} */
+
+
+@media only screen and (min-width: 768px) {
+    .description-item {
+        width: calc((100% - 1 * 24px) / 2);
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .description-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
+}
+
+
+
+
 
 .description-item:nth-child(4n) {
     margin-right: 0;
@@ -544,6 +614,13 @@ body {
     border-radius: 4px;
     margin-bottom: 8px;
 }
+
+@media only screen and (max-width: 1128px) {
+    .container-description {
+        display: none;
+    }
+}
+
 
 /* What are we doing photos flex */
 
@@ -569,7 +646,7 @@ body {
     padding-bottom: 120px;
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1128px) {
     .section-doing {
         display: none;
     }
@@ -582,9 +659,24 @@ body {
 .members-flex {
     display: flex;
     flex-wrap: wrap;
-    
-    gap: 24px;
+    gap: 72px 24px;
+    justify-content: center;
+    align-items: center;
 }
+
+
+@media only screen and (min-width: 768px) {
+    .members-flex {
+        gap: 64px 24px;
+    }
+}
+@media only screen and (min-width: 1128px) {
+    .members-flex {
+        gap: 24px;
+    }
+}
+
+
 
 .employee-page{
     background-color: var(--white-color-secondary);
@@ -592,10 +684,23 @@ body {
 
 
 .employee-item {
+    max-width: 264px;
     background-color: var(--white-color);
-    width: calc((100% - 3 * 24px) / 4);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .employee-item {
+        width: calc((100% - 1 * 24px) / 2);
+    }
+}
+
+@media only screen and (min-width: 1128px) {
+    .employee-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
 }
 
 /* .employee-item {
@@ -636,14 +741,66 @@ body {
 
 .customers-list {
     display: flex;
-    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 72px 24px;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1127px) {
+    .customers-list {
+        max-width: 552px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 1128px) {
+    .customers-listx {
+        gap: 24px;
+    }
+}
+
+
+.members-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* @media only screen and (min-width: 1128px) {
+    .members-flex {
+        gap: 24px;
+    }
+} */
+
+
+.customers-list_item {
+    width: calc((100% - 1 * 24px) / 2);
+}
+
+
+@media only screen and (min-width: 768px) {
+    .customers-list_item {
+        width: calc((100% - 2 * 24px) / 3);
+    }
+}
+
+@media only screen and (min-width: 1128px) {
+    .customers-list_item {
+        width: calc((100% - 5 * 24px) / 6);
+    }
+}
+
+
 
 .customers-list_item-link {
     display: flex;
     border: 1px solid var(--grey-color);
     border-radius: 4px;
-    width: 168px;
+    /* width: 168px; */
     height: 88px;
     align-items: center;
     justify-content: center;
@@ -967,27 +1124,30 @@ body {
     transform: translate(-50%, -50%) scale(0.6);
 }
 
+
 .modal {
     position: absolute;
-
-    /* center the left corner our modal window */
     top: 50%;
     left: 50%;
-
-    /* finally center from center our modal*/
     transform: translate(-50%, -50%) scale(1);
-
-    /* For adaptive we should write max-width */
-    max-width: 408px;
+    max-width: 392px;
     width: 100%;
 
-    height: 576px;
+    height: 584px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
 }
+
+@media only screen and (min-width: 1128px) {
+    .modal {
+        max-width: 408px;
+        height: 576px;
+    }
+}
+
 
 .modal-close-btn {
     position: absolute;
@@ -1158,7 +1318,6 @@ body {
     letter-spacing: 0.04em;
     color: var(--white-color);
 }
-
 
 
 
