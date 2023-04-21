@@ -222,10 +222,21 @@ body {
 
 .section-paragraf {
     margin-bottom: 8px;
-    font-weight: 700px;
-    font-size: 36px;
-    line-height: 1.11;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
+}
+
+
+@media only screen and (min-width: 1128px) {
+    .section-paragraf {
+        margin-bottom: 8px;
+         font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+    }
 }
 
 @media only screen and (min-width: 1128px) {
@@ -252,17 +263,18 @@ body {
 } 
 
 .section-description{
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-@media only screen and (min-width: 1128px) {
+
+
+/* @media only screen and (min-width: 1128px) {
     .section-description {
-        font-weight: 400;
+        font-weight: 500;
     }
-}
+} */
 
 .section-descrip-theme-light {
     color: var(--secondary-text-color);
@@ -1394,6 +1406,8 @@ body {
 .menu-toggle {
     width: 32px;
     height: 22px;
+    top: 24px;
+    right: 24px;
 
     display: flex;
     justify-content: center;
@@ -1403,6 +1417,16 @@ body {
     padding: 0;
     margin-left: auto;
 }
+
+.modal-new {
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    fill: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 @media only screen and (min-width: 768px) {
     .menu-toggle {
@@ -1424,7 +1448,7 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 80px 35px 40px 40px;
-    background-color: lightcoral;
+    background-color: var(--white-color);
     z-index: 999;
 
     display: flex;
@@ -1451,20 +1475,52 @@ body {
 
 .mobile-menu .link {
     display: block;
-    padding: 10px;
-    color: #fff;
+    color: #2E2F42;
     text-decoration: none;
 }
 
+.mobile-menu .link:hover,
+.mobile-menu .link:focus {
+    color: #404BBF;
+}v
+
 .mobile-contacts {
+    margin-left: 40px;
     margin-bottom: 48px;
 }
 
 
+.mobile-mene-li {
+    font-style: 700px;
+    font-size: 36px;
+    line-height: 1.11; 
+    letter-spacing: 0.2em;
+    color: #4D5AE5;
+    margin-bottom: 40px;
+}
+
+.mobile-mene-li-sec {
+    font-style: 500px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    color: #434455;
+}
 
 
 
+.menu-link-mobile {
+    display: block;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 40px;
+}
 
 
 
-
+/* .menu-link-mobile:not(:last-child) {
+    margin-bottom: 40px;
+} */
