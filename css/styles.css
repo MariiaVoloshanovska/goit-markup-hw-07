@@ -220,23 +220,22 @@ body {
     color: var(--primary-text-color);
 }
 
-.section-paragraf {
+/* .section-paragraf {
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-}
+} */
 
-
-@media only screen and (min-width: 1128px) {
-    .section-paragraf {
-        margin-bottom: 8px;
-         font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-    }
+.section-paragraf {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    text-align: center;
 }
 
 @media only screen and (min-width: 1128px) {
@@ -244,7 +243,7 @@ body {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
-        letter-spacing: 0.02em;
+        text-align: left;
     }
 }
 
