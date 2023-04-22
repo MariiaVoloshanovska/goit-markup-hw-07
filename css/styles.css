@@ -1641,6 +1641,7 @@ body {
 
 .menu-link-contactss {
     display: block;
+    /* max-width: 353px; */
     font-style: 700px;
     font-size: 36px;
     line-height: 1.11;
