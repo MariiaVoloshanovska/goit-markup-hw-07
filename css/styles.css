@@ -1473,7 +1473,11 @@ body {
 
 .mobile-menu {
     margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
+
 
 .mobile-menu .link {
     display: block;
@@ -1487,28 +1491,51 @@ body {
     color: var(--accent-bg-color);
 }
 
-.mobile-contacts {
-    margin-left: 40px;
+
+/* .mobile-contacts {
     margin-bottom: 48px;
+} */
+
+.mobile-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 40px;
 }
 
 
-.mobile-mene-li {
+.menu-link-contactss {
+    display: block;
     font-style: 700px;
     font-size: 36px;
-    line-height: 1.11; 
+    line-height: 1.11;
     letter-spacing: 0.2em;
-    color: var(--logo-footer);
-    margin-bottom: 40px;
+    color: var(--secondary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.mobile-mene-li-sec {
+.menu-link-contactss:hover,
+.menu-link-contactss:focus {
+    color: var(--logo-footer);
+}
+
+
+.menu-link-contactsss {
+    display: block;
     text-decoration: none;
     font-style: 500px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.2em;
-    color: #434455;
+    color: var(--secondary-text-color);
+    margin-bottom: 48px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link-contactsss:hover,
+.menu-link-contactsss:focus {
+    color: var(--logo-footer);
 }
 
 
@@ -1518,8 +1545,12 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
+/* .menu-link-mobile:not(:last-child) {
+    margin-bottom: 40px;
+} */
+
 
 .style-memberss {
     width: 40px;
@@ -1528,22 +1559,22 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
+    /* margin-right: 56px; */
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* .style-memberss:not(:last-child) {
+    margin-right: 40px;
+} */
 
 
 .members-listt {
     display: flex;
-    justify-content: center;
-    gap: 24px;
-    justify-content: space-around;
+    justify-content: left;
+    gap: 56px;
+    /* justify-content: space-around; */
 }
 /* .members-li-new {
     justify-content: space-around;
-} */
-/* .menu-link-mobile:not(:last-child) {
-    margin-bottom: 40px;
 } */
 
