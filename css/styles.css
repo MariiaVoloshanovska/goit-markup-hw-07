@@ -985,6 +985,7 @@ body {
     .footer-icons {
         flex-wrap: nowrap;
         gap: 0 0;
+        padding: 0;
         align-self: baseline;
         align-items: baseline;
         max-width: 1158px;
@@ -1067,8 +1068,15 @@ body {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: var(--white-color);
+    color: var(--grey-color);
 }
+
+@media only screen and (min-width: 1158px) {
+    .modal-form-input-footer::placeholder {
+        color: var(--white-color);
+    }
+}
+
 
 .modal-form-input-footer:focus {
     outline: none;
