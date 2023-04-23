@@ -238,7 +238,7 @@ body {
     text-align: center;
 }
 
-@media only screen and (min-width: 1128px) {
+@media only screen and (min-width: 768px) {
     .section-paragraf {
         font-weight: 500;
         font-size: 20px;
@@ -1043,7 +1043,6 @@ body {
 
 .modal-form-input-footer {
     width: 100%;
-    max-width: 264px;
     height: 38px;
     padding-left: 16px;;
     margin-bottom: 16px;
