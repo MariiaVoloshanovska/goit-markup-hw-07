@@ -1748,3 +1748,7 @@ body {
 .currentt {
     color: #404BBF;
 }
+
+.mob-menu .current-portfolio {
+    color: #404BBF;
+}
